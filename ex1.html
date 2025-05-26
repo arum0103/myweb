@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>인사하기 예제</title>
+</head>
+<body>
+  <h1>안녕하세요!</h1>
+  <p>이름을 입력하세요:</p>
+  <input type="text" id="nameInput" placeholder="이름 입력" />
+  <button onclick="sayHello()">인사하기</button>
+  <p id="greetingMessage"></p>
+
+  <script>
+    function sayHello() {
+      const 최아름 = document.getElementById("nameInput").value;
+      const message = "안녕하세요, " + 최아름 + "님! 반가워요 😊";
+      document.getElementById("greetingMessage").textContent = message;
+    }
+  </script>
+</body>
+</html>

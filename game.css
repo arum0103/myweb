@@ -1,0 +1,53 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+    background-color: #fffafc;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #ff6f91;
+    margin-bottom: 20px;
+  }
+  
+  .input-area {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  #start-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #start-btn:hover {
+    background-color: #ff5c8a;
+  }
+  
+  canvas {
+    border: 2px dashed #ffc0cb;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  #winners {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+  }
+  
