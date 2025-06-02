@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 100px 60px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: 1px solid #333;
+      background: transparent;
+      cursor: pointer;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 100px 60px;
+    }
+    .about img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    .about .description {
+      max-width: 500px;
+    }
+    .work {
+      padding: 100px 60px;
+      text-align: center;
+    }
+    .work h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .contact {
+      padding: 100px 60px;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm a Creative Developer</h1>
+    <button onclick="location.href='#work'">View Work</button>
+  </section>
+
+  <section class="about" id="about">
+    <img src="profile.jpg" alt="My Photo">
+    <div class="description">
+      <h2>About Me</h2>
+      <p>I’m a front-end developer passionate about creating beautiful and functional web experiences. I enjoy building clean, user-focused designs and writing efficient code.</p>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Short description of the project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Short description of the project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Short description of the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email or follow me on social media.</p>
+    <a href="mailto:example@email.com">example@email.com</a>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+  </section>
+
+  <footer>
+    &copy; 2025 MyPortfolio. All rights reserved.
+  </footer>
+</body>
+</html>

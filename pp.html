@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>최아름 Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      background-color: #f5f5f5;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin: 0 0 10px 0;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero img {
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    #about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    #about img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    #work {
+      background-color: #f9f9f9;
+    }
+
+    .filter {
+      margin-bottom: 20px;
+    }
+
+    .filter button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      background-color: #e0e0e0;
+      border: none;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    #contact form {
+      display: grid;
+      gap: 20px;
+      max-width: 500px;
+    }
+
+    #contact input, #contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>최아름 Portfolio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm a Creative Developer</h1>
+      <p>프론트엔드 개발자 최아름의 포트폴리오입니다.</p>
+      <button onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">View Work</button>
+    </div>
+    <img src="대표작업물.jpg" alt="대표작업물" />
+  </section>
+
+  <section id="about">
+    <img src="프로필.jpg" alt="프로필 사진" />
+    <div>
+      <h2>About Me</h2>
+      <p>I'm a front-end developer passionate about creating beautiful and functional web experiences. I enjoy building clean, user-focused designs and writing efficient code.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work</h2>
+    <div class="filter">
+      <button>All</button>
+      <button>Web</button>
+      <button>Design</button>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item" onclick="location.href='project1.html'"><img src="project1.jpg" alt="작업물1" /></div>
+      <div class="gallery-item" onclick="location.href='project2.html'"><img src="project2.jpg" alt="작업물2" /></div>
+      <div class="gallery-item" onclick="location.href='project3.html'"><img src="project3.jpg" alt="작업물3" /></div>
+      <div class="gallery-item" onclick="location.href='project4.html'"><img src="project4.jpg" alt="작업물4" /></div>
+      <div class="gallery-item" onclick="location.href='project5.html'"><img src="project5.jpg" alt="작업물5" /></div>
+      <div class="gallery-item" onclick="location.href='project6.html'"><img src="project6.jpg" alt="작업물6" /></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="이름" required />
+      <input type="text" placeholder="연락처" required />
+      <input type="email" placeholder="이메일" required />
+      <input type="text" placeholder="SNS 계정 (ex. Instagram, GitHub)" />
+      <textarea rows="4" placeholder="메시지"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 최아름. All rights reserved.
+  </footer>
+</body>
+</html>
