@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최아름 Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 3rem;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    nav a {
+      margin-left: 1.4rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 40;
+    }
+
+    .image-container {
+      margin-top: 80px;
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .anchor {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+    }
+
+    #home-anchor { top: 0; }
+    #about-anchor { top: 950px; }
+    #work-anchor { top: 1800px; }
+    #contact-anchor { top: 2800px; }
+
+    .work-button {
+      position: absolute;
+      top: 430px;
+      left: 173px;
+      padding: 8px 16px;
+      background-color: #eacbcb;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .work-bg {
+      background-color: #fcf9f7;
+      width: 100%;
+    }
+
+    .carousel-container {
+      max-width: 960px;
+      width: 100%;
+      margin: auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .carousel-container h2 {
+      font-size: 2.5rem;
+      font-weight: 379;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 900px;
+      height: 2.7px;
+      background: black;
+      margin: 0 auto 20px;
+    }
+
+    #slide-label {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    .carousel {
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-slide-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      min-width: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .carousel-buttons {
+      margin-top: 40px;
+    }
+
+    .carousel-buttons button {
+      padding: 8px 16px;
+      margin: 0 10px;
+      background-color: #eacbcb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-section {
+      background-color: #eacbcb;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      font-weight: 379;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 1.24rem;
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .contact-info img {
+      width: 29px;
+      height: 27.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>최아름 Portfolio</h1>
+    <nav>
+      <a href="#home-anchor">Home</a>
+      <a href="#about-anchor">About</a>
+      <a href="#work-anchor">Work</a>
+      <a href="#contact-anchor">Contact</a>
+    </nav>
+  </header>
+
+  <div class="image-container">
+    <img src="backggggg.jpg" alt="전체 배경 이미지">
+    <a href="#work-anchor"><button class="work-button">View Work</button></a>
+    <div id="home-anchor" class="anchor"></div>
+    <div id="about-anchor" class="anchor"></div>
+    <div id="work-anchor" class="anchor"></div>
+    <div id="contact-anchor" class="anchor"></div>
+  </div>
+
+  <div class="work-bg">
+    <div class="carousel-container" id="work">
+      <h2>Work</h2>
+      <div class="divider"></div>
+      <p id="slide-label">Content</p>
+      <div class="carousel">
+        <div class="carousel-track" id="track">
+          <div class="carousel-slide-group">
+            <div class="carousel-slide"><img src="img1.jpg" alt="작업물1"></div>
+            <div class="carousel-slide"><img src="img2.jpg" alt="작업물2"></div>
+            <div class="carousel-slide"><img src="img3.jpg" alt="작업물3"></div>
+            <div class="carousel-slide"><img src="img4.jpg" alt="작업물4"></div>
+            <div class="carousel-slide"><img src="img5.jpg" alt="작업물5"></div>
+            <div class="carousel-slide"><img src="img6.jpg" alt="작업물6"></div>
+          </div>
+          <div class="carousel-slide-group">
+            <div class="carousel-slide"><img src="img7.jpg" alt="작업물7"></div>
+            <div class="carousel-slide"><img src="img8.jpg" alt="작업물8"></div>
+            <div class="carousel-slide"><img src="img9.jpg" alt="작업물9"></div>
+            <div class="carousel-slide"><img src="img10.jpg" alt="작업물10"></div>
+            <div class="carousel-slide"><img src="img11.jpg" alt="작업물11"></div>
+            <div class="carousel-slide"><img src="img12.jpg" alt="작업물12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button onclick="prevSlide()">〈</button>
+        <button onclick="nextSlide()">〉</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <div><img src="phone.png" alt="Phone Icon"><span>010-5911-5661</span></div>
+      <div><img src="email.png" alt="Email Icon"><span>arumhi@naver.com</span></div>
+      <div><img src="insta.png" alt="Instagram Icon"><span>@arumeee</span></div>
+    </div>
+  </div>
+
+  <script>
+    const track = document.getElementById('track');
+    const slideGroups = document.querySelectorAll('.carousel-slide-group');
+    const label = document.getElementById('slide-label');
+    let currentGroup = 0;
+
+    function updateSlide() {
+      const offset = -100 * currentGroup;
+      track.style.transform = `translateX(${offset}%)`;
+      label.textContent = currentGroup === 0 ? 'Content' : 'Vedio';
+    }
+
+    function nextSlide() {
+      if (currentGroup < slideGroups.length - 1) {
+        currentGroup++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentGroup > 0) {
+        currentGroup--;
+        updateSlide();
+      }
+    }
+
+    window.onload = updateSlide;
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최아름 Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+     header h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .image-container {
+      margin-top: 80px; /* header 높이만큼 offset */
+      position: relative;
+    }
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+    .anchor {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+    }
+    #home-anchor { top: 0; }
+    #about-anchor { top: 950px; }
+    #work-anchor { top: 1900px; }
+    #contact-anchor { top: 2850px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>아름 Portfolio</h1>
+    <nav>
+      <a href="#home-anchor">Home</a>
+      <a href="#about-anchor">About</a>
+      <a href="#work-anchor">Work</a>
+      <a href="#contact-anchor">Contact</a>
+    </nav>
+  </header>
+
+  <div class="image-container">
+    <img src="backgggg.jpg" alt="전체 배경 이미지">
+    <div id="home-anchor" class="anchor"></div>
+    <div id="about-anchor" class="anchor"></div>
+    <div id="work-anchor" class="anchor"></div>
+    <div id="contact-anchor" class="anchor"></div>
+  </div>
+</body>
+</html>
