@@ -33,7 +33,7 @@
       margin-left: 1.4rem;
       text-decoration: none;
       color: #111;
-      font-weight: 40;
+      font-weight: 400;
     }
 
     .image-container {
@@ -53,22 +53,23 @@
     }
 
     #home-anchor { top: 0; }
-    #about-anchor { top: 950px; }
-    #work-anchor { top: 1800px; }
+    #about-anchor { top: 702px; }
+    #work-anchor { top: 1630px; }
     #contact-anchor { top: 2800px; }
 
     .work-button {
-      position: absolute;
-      top: 430px;
-      left: 173px;
-      padding: 8px 16px;
-      background-color: #eacbcb;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
+  position: absolute;
+  top: 29vw; /* 뷰포트 너비 기준으로 조정 (화면 크기 반영) */
+  left: 11.2vw;
+  padding: 12px 24px;
+  background-color: #eacbcb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
 
     .work-bg {
       background-color: #fcf9f7;
@@ -85,12 +86,12 @@
 
     .carousel-container h2 {
       font-size: 2.5rem;
-      font-weight: 379;
+      font-weight: 380.5;
       margin-bottom: 10px;
     }
 
     .divider {
-      width: 900px;
+      width: 920px;
       height: 2.7px;
       background: black;
       margin: 0 auto 20px;
@@ -114,7 +115,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, auto);
-      gap: 20px;
+      gap: 40px;
       min-width: 100%;
     }
 
@@ -125,29 +126,50 @@
       border-radius: 10px;
     }
 
-    .carousel-buttons {
-      margin-top: 40px;
+  .carousel-slide img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
-    .carousel-buttons button {
-      padding: 8px 16px;
-      margin: 0 10px;
-      background-color: #eacbcb;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    .carousel-buttons {
+      position: absolute;
+      top: 274%;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 200px;
+      box-sizing: border-box;
     }
+
+   .carousel-buttons button {
+  padding: 10px 10px;        /* 🔁 버튼 크기 조절 */
+  background-color: #fcf9f7; /* 🔁 배경색 */
+  color: #eacbcb;              /* 🔁 화살표 색상 */
+  font-size: 1.8rem;         /* ✅ 화살표 크기 */
+  font-weight: 900;          /* ✅ 화살표 두께 (보통: 400, 굵게: 600~700) */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    display: flex;
+  align-items: center;   /* 🔥 세로 가운데 */
+  justify-content: center; /* 🔥 가로 가운데 */
+}
+
+
 
     .contact-section {
       background-color: #eacbcb;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     .contact-section h2 {
       font-size: 2.5rem;
-      font-weight: 379;
+      font-weight: 380.5;
       margin-bottom: 30px;
     }
 
@@ -185,7 +207,7 @@
   </header>
 
   <div class="image-container">
-    <img src="backggggg.jpg" alt="전체 배경 이미지">
+    <img src="backgggggg.jpg" alt="전체 배경 이미지">
     <a href="#work-anchor"><button class="work-button">View Work</button></a>
     <div id="home-anchor" class="anchor"></div>
     <div id="about-anchor" class="anchor"></div>
@@ -201,20 +223,78 @@
       <div class="carousel">
         <div class="carousel-track" id="track">
           <div class="carousel-slide-group">
-            <div class="carousel-slide"><img src="img1.jpg" alt="작업물1"></div>
-            <div class="carousel-slide"><img src="img2.jpg" alt="작업물2"></div>
-            <div class="carousel-slide"><img src="img3.jpg" alt="작업물3"></div>
-            <div class="carousel-slide"><img src="img4.jpg" alt="작업물4"></div>
-            <div class="carousel-slide"><img src="img5.jpg" alt="작업물5"></div>
-            <div class="carousel-slide"><img src="img6.jpg" alt="작업물6"></div>
+            <div class="carousel-slide">
+  <a href="work1.html" target="_blank">
+    <img src="img1.jpg" alt="작업물1">
+  </a>
+</div>
+
+<div class="carousel-slide">
+  <a href="work2.html" target="_blank">
+    <img src="img2.jpg" alt="작업물2">
+  </a>
+</div>
+
+<div class="carousel-slide">
+  <a href="work3.html" target="_blank">
+    <img src="img3.jpg" alt="작업물3">
+  </a>
+</div>
+
+<div class="carousel-slide">
+  <a href="work4.html" target="_blank">
+    <img src="img4.jpg" alt="작업물4">
+  </a>
+</div>
+
+<div class="carousel-slide">
+  <a href="work5.html" target="_blank">
+    <img src="img5.jpg" alt="작업물5">
+  </a>
+</div>
+
+<div class="carousel-slide">
+  <a href="work6.html" target="_blank">
+    <img src="img6.jpg" alt="작업물6">
+  </a>
+</div>
           </div>
           <div class="carousel-slide-group">
-            <div class="carousel-slide"><img src="img7.jpg" alt="작업물7"></div>
-            <div class="carousel-slide"><img src="img8.jpg" alt="작업물8"></div>
-            <div class="carousel-slide"><img src="img9.jpg" alt="작업물9"></div>
-            <div class="carousel-slide"><img src="img10.jpg" alt="작업물10"></div>
-            <div class="carousel-slide"><img src="img11.jpg" alt="작업물11"></div>
-            <div class="carousel-slide"><img src="img12.jpg" alt="작업물12"></div>
+  <div class="carousel-slide">
+    <a href="https://youtube.com/shorts/MOlibNotYQE?feature=share" target="_blank">
+      <img src="img7.jpg" alt="작업물7">
+    </a>
+  </div>
+
+  <div class="carousel-slide">
+    <a href="https://youtu.be/czcCchVX6Uw" target="_blank">
+      <img src="img8.jpg" alt="작업물8">
+    </a>
+  </div>
+            
+  <div class="carousel-slide">
+    <a href="https://youtu.be/Ag_0_Ko0DDY" target="_blank">
+      <img src="img9.jpg" alt="작업물9">
+    </a>
+  </div>
+
+  <div class="carousel-slide">
+    <a href="https://www.youtube.com/playlist?list=PLP-XTWp2zgY150C2d71IrBAe1JCnnKf1y" target="_blank">
+      <img src="img10.jpg" alt="작업물10">
+    </a>
+  </div>
+
+   <div class="carousel-slide">
+    <a href="https://youtu.be/T7k4TlNoG8U?si=RRiHyjBnrwDlVsOb" target="_blank">
+      <img src="img11.jpg" alt="작업물11">
+    </a>
+  </div>
+
+    <div class="carousel-slide">
+    <a href="https://youtu.be/N96t2bqmERY?si=iEj405AJiju28cjh" target="_blank">
+      <img src="img12.jpg" alt="작업물12">
+    </a>
+  </div>
           </div>
         </div>
       </div>
